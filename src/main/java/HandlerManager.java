@@ -100,10 +100,10 @@ public class HandlerManager {
                 Article article = new Article(number,description,Integer.parseInt(price));
 
                 //update data
-                if(updateCall.equals(false)){System.out.println(handler.updateData(article)); break;}
+                if(updateCall.equals(true)){System.out.println(handler.updateData(article)); break;}
 
                 //post data
-                System.out.println(handler.updateData(article));
+                System.out.println(handler.postData(article));
                 break;
 
             case Customer:
@@ -142,10 +142,10 @@ public class HandlerManager {
                 Customer customer = new Customer(userId,forename,surename,birthday,city,code,street,housenumber,email,telephone);
 
                 //update data
-                if(updateCall.equals(false)){System.out.println(handler.updateData(customer)); break;}
+                if(updateCall.equals(true)){System.out.println(handler.updateData(customer)); break;}
 
                 //post data
-                System.out.println(handler.updateData(customer));
+                System.out.println(handler.postData(customer));
                 break;
 
             case Order:
@@ -166,7 +166,7 @@ public class HandlerManager {
                 Order order = new Order(orderdate,ordernumber,userID,articleID);
 
                 //update data
-                if(updateCall.equals(false)){System.out.println(handler.updateData(order)); break;}
+                if(updateCall.equals(true)){System.out.println(handler.updateData(order)); break;}
 
                 //post data
                 System.out.println(handler.postData(order));
